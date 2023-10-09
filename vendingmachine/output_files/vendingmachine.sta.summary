@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk50m'
+Slack : -3.701
+TNS   : -101.892
+
+Type  : Slow 1200mV 85C Model Setup 'debouncer:clkd|A'
+Slack : -1.175
+TNS   : -3.872
+
+Type  : Slow 1200mV 85C Model Hold 'debouncer:clkd|A'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk50m'
+Slack : 0.621
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'debouncer:clkd|A'
+Slack : -1.078
+TNS   : -4.312
+
+Type  : Slow 1200mV 85C Model Removal 'debouncer:clkd|A'
+Slack : 1.451
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk50m'
+Slack : -3.000
+TNS   : -50.702
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debouncer:clkd|A'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Setup 'clk50m'
+Slack : -3.388
+TNS   : -92.073
+
+Type  : Slow 1200mV 0C Model Setup 'debouncer:clkd|A'
+Slack : -0.982
+TNS   : -3.184
+
+Type  : Slow 1200mV 0C Model Hold 'debouncer:clkd|A'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk50m'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'debouncer:clkd|A'
+Slack : -0.979
+TNS   : -3.916
+
+Type  : Slow 1200mV 0C Model Removal 'debouncer:clkd|A'
+Slack : 1.421
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk50m'
+Slack : -3.000
+TNS   : -50.702
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debouncer:clkd|A'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Fast 1200mV 0C Model Setup 'clk50m'
+Slack : -1.061
+TNS   : -23.935
+
+Type  : Fast 1200mV 0C Model Setup 'debouncer:clkd|A'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'debouncer:clkd|A'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk50m'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'debouncer:clkd|A'
+Slack : -0.217
+TNS   : -0.868
+
+Type  : Fast 1200mV 0C Model Removal 'debouncer:clkd|A'
+Slack : 0.862
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk50m'
+Slack : -3.000
+TNS   : -37.884
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debouncer:clkd|A'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

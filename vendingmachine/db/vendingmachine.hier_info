@@ -1,0 +1,207 @@
+|vendingmachine
+coin[0] => encoder:comb_3.y[0]
+coin[1] => encoder:comb_3.y[1]
+coin[2] => encoder:comb_3.y[2]
+coin[3] => encoder:comb_3.y[3]
+clk => clk.IN1
+clk50m => clk50m.IN2
+res => res.IN1
+tom[0] <= D_FF_neg:zero.Q
+tom[1] <= D_FF_neg:one.Q
+tom[2] <= D_FF_neg:two.Q
+tom[3] <= D_FF_neg:three.Q
+
+
+|vendingmachine|debouncer:clkd
+A_noisy => Anext.IN1
+A_noisy => t_r.IN1
+A_noisy => t_r.IN1
+CLK50M => A~reg0.CLK
+CLK50M => COUNT[0].CLK
+CLK50M => COUNT[1].CLK
+CLK50M => COUNT[2].CLK
+CLK50M => COUNT[3].CLK
+CLK50M => COUNT[4].CLK
+CLK50M => COUNT[5].CLK
+CLK50M => COUNT[6].CLK
+CLK50M => COUNT[7].CLK
+CLK50M => COUNT[8].CLK
+CLK50M => COUNT[9].CLK
+CLK50M => COUNT[10].CLK
+CLK50M => COUNT[11].CLK
+CLK50M => COUNT[12].CLK
+CLK50M => COUNT[13].CLK
+CLK50M => COUNT[14].CLK
+CLK50M => COUNT[15].CLK
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|debouncer:resd
+A_noisy => Anext.IN1
+A_noisy => t_r.IN1
+A_noisy => t_r.IN1
+CLK50M => A~reg0.CLK
+CLK50M => COUNT[0].CLK
+CLK50M => COUNT[1].CLK
+CLK50M => COUNT[2].CLK
+CLK50M => COUNT[3].CLK
+CLK50M => COUNT[4].CLK
+CLK50M => COUNT[5].CLK
+CLK50M => COUNT[6].CLK
+CLK50M => COUNT[7].CLK
+CLK50M => COUNT[8].CLK
+CLK50M => COUNT[9].CLK
+CLK50M => COUNT[10].CLK
+CLK50M => COUNT[11].CLK
+CLK50M => COUNT[12].CLK
+CLK50M => COUNT[13].CLK
+CLK50M => COUNT[14].CLK
+CLK50M => COUNT[15].CLK
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|encoder:comb_3
+y[0] => ~NO_FANOUT~
+y[1] => out.IN0
+y[2] => out.IN0
+y[3] => out.IN1
+y[3] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|statelogic:comb_4
+s[0] => d.IN0
+s[0] => d.IN0
+s[0] => d.IN1
+s[0] => d.IN1
+s[0] => d.IN1
+s[0] => d.IN1
+s[0] => d.IN0
+s[0] => d.IN0
+s[1] => d.IN1
+s[1] => d.IN0
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN0
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN0
+s[2] => d.IN0
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN0
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN0
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+d[0] <= d.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:zero
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:one
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:two
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:three
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
