@@ -1,4 +1,6 @@
 
+# Vending Machine Project
+
 # **Team Members**
 
 * John Akujobi
@@ -6,13 +8,13 @@
 
 # **Inputs:**
 
-| Signal            | DE10-Lite I/O | Pin Assignment |
-| ----------------- | ------------- | -------------- |
-| Farthing (0.25d)  | SW 0          | PIN_           |
-| Half-Penny (0.5d) | SW 1          | PIN_           |
-| Penny (1d)        | SW 2          | PIN_           |
-| CLK Input         |               | PIN_           |
-| RES Input         |               | PIN_           |
+| Signal                | DE10-Lite I/O | Pin Assignment |
+| --------------------- | ------------- | -------------- |
+| Farthing (0.25d) - F  | SW 0          | PIN_C10        |
+| Half-Penny (0.5d) - H | SW 1          | PIN_C11        |
+| Penny (1d) - P        | SW 2          | PIN_D12        |
+| CLK Input             | KEY0          | PIN_B8         |
+| RES Input             | KEY1          | PIN_A7         |
 
 1. **Farthing (0.25d)** :
    * Lowest value input to the vending machine.
@@ -30,14 +32,33 @@
 
 # **Outputs:**
 
-| Signal               | DE10-Lite I/O | Pin Assignment |
-| -------------------- | ------------- | -------------- |
-| Current State Output | LEDR [S-1:0]  | PIN_           |
-| Tomato Output        | LEDR[9]       | PIN_           |
-| Ha’penny Output     | LEDR[8]       | PIN_           |
-| Farthing Output      | LEDR[7]       | PIN_           |
-| (State) Farthings    | HEX5          | PIN_           |
-| (Change) Farthings   | HEX0          | PIN_           |
+| Signal                    | DE10-Lite I/O | Pin Assignment |
+| :------------------------ | ------------- | -------------- |
+| Current State Output      | LEDR [S-1:0]  | PIN_           |
+| Least Significant Binary  | LEDR[0]       | PIN_A8         |
+|                           | LEDR[1]       | PIN_A9         |
+|                           | LEDR[2]       | PIN_A10        |
+| Most Significant Binary   | LEDR[3]       | PIN_B10        |
+| OUTPUTS                   |               |                |
+| Tomato Output             | LEDR[9]       | PIN_B11        |
+| Ha’penny Output - Change | LEDR[8]       | PIN_A11        |
+| Farthing Output - Change  | LEDR[7]       | PIN_D14        |
+| **(State) Farthings**    | HEX5          |                |
+| a                         | HEX50         | PIN_J20        |
+| b                         | HEX51         | PIN_K20        |
+| c                         | HEX52         | PIN_L18        |
+| d                         | HEX53         | PIN_N18        |
+| e                         | HEX54         | PIN_M20        |
+| f                         | HEX55         | PIN_N19        |
+| g                         | HEX56         | PIN_N20        |
+| (Change) Farthings        | HEX0          |                |
+| a                         | HEX00         | PIN_C14        |
+| b                         | HEX01         | PIN_E15        |
+| c                         | HEX02         | PIN_C15        |
+| d                         | HEX03         | PIN_C16        |
+| e                         | HEX04         | PIN_E16        |
+| f                         | HEX05         | PIN_D17        |
+| g                         | HEX06         | PIN_C17        |
 
 1. **Rotten Tomato Dispense Signal** :
    * This signal is activated when the vending machine dispenses a rotten tomato.
@@ -104,3 +125,5 @@
 # Required System Verilog Modules
 
 # State Transition Diagram for Vending Machine:
+
+## Code
