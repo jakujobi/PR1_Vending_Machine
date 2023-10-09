@@ -8,7 +8,7 @@
 module seven_seg(
     input [3:0] sevIn,
     input sevEnable,        //enable: enable signal
-    output logic [6:0] sevOut     //out: 16-bit output signal
+    output logic [6:0] sevOut     //out: 7-bit output signal
 );
 
 logic [15:0] decOut;
