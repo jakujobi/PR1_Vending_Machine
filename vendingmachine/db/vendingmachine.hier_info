@@ -6,10 +6,10 @@ coin[3] => encoder:comb_3.y[3]
 clk => clk.IN1
 clk50m => clk50m.IN2
 res => res.IN1
-tom[0] <= D_FF_neg:zero.Q
-tom[1] <= D_FF_neg:one.Q
-tom[2] <= D_FF_neg:two.Q
-tom[3] <= D_FF_neg:three.Q
+tom[0] << D_FF_neg:zero.Q
+tom[1] << D_FF_neg:one.Q
+tom[2] << D_FF_neg:two.Q
+tom[3] << D_FF_neg:three.Q
 
 
 |vendingmachine|debouncer:clkd
