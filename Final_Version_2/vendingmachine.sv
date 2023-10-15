@@ -1,19 +1,24 @@
 // Authors:	Kayleigh Humphrey, LNU Sukhman Singh, John Akujobi
 // Date: 	Oct. 10, 2023
 // Name:   	Vending Machine
-/*  Top Level
-*
-*	Inputs:	
-*	coin[0], coin[1], coin[2] - corresponding to Pennies, Ha'pennies & Farthings
-*	clk 	 - clock
-*	clk50m - 50 MHz clock
-*	res 	 - reset button
-*	enc_I  - encoded inputs
-*
-*	Outputs:
-*	out_tom[0], out_tom[1], out_tom[2] & out_tom[3]
-*
-*/ 
+
+/**
+ * This module implements the top level module of a vending machine that accepts coins and dispenses tomatoes.
+ * 
+ * Inputs:
+ * - coin[2:0]: 3-bit input representing the coins inserted into the machine. coin[0] represents pennies, coin[1] represents ha'pennies, and coin[2] represents farthings.
+ * - clk: clock signal from the button
+ * - clk50m: 50 MHz internal clock
+ * - res: reset button
+ * 
+ * Outputs:
+ * - tom: output signal to the tomato LED
+ * - s[6:0]: 7-bit output signal to the HEX display showing the state of the machine
+ * - c[6:0]: 7-bit output signal to the HEX display showing the change
+ * - outled[3:0]: 4-bit output signal to the LEDs showing the state of the machine
+ * - HapCH: output signal to the LED showing the change in ha'pennies
+ * - FarthCH: output signal to the LED showing the change in farthings
+ */
 
 module vendingmachine(
 	input  logic coin[2:0],	// coin inputs
