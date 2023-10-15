@@ -1,18 +1,15 @@
-/*
-*	Author:	Kayleigh Humphrey
-*	Date: 	Oct. 10, 2023
-*	Name:   	Encoder
-*   Encodes 4-bit inputs into 2-bit.
-*
-*	Inputs:	
-*	Y[0], Y[1], Y[2] - corresponding to Pennies, Ha'pennies & Farthings
-*	Outputs:
-*	out[0] & out[1] - the encoded inputs
-*/ 
+// Authors:	Kayleigh Humphrey, LNU Sukhman Singh, John Akujobi
+// Date: 	October, Fall, 2023
+// Name:   	encoder
+// Filename: encoder.sv
+
+// The encoder module takes a 3-bit input and encodes it into a 2-bit output.
+//    y - 3-bit input corresponding to Pennies, Ha'pennies & Farthings
+//    out - 2-bit encoded output
 
 module encoder(
-	input logic y[2:0] , 
-	output logic out[1:0]
+	input logic y[2:0], //- 3-bit input corresponding to Pennies, Ha'pennies & Farthings
+	output logic out[1:0] 
 );
 
 assign out[0] = y[2] | y[0]; 
