@@ -1,6 +1,10 @@
 // Authors: John Akujobi & LNU Sukhman Singh
 // Date: October, Fall 2023
-// Description: This module is a 4-to-16 decoder that takes a 4 inputs and generates a 16-bit output. 
+// Description:
+// 		This module is a 4-to-16 decoder that takes a 4 inputs and generates a 9-bit output. 
+// Input - a0, a1, a2, a3 - 4 inputs
+// Output - y[8:0] - 9-bit output
+
 module d416 (
 	input  logic a0, a1, a2, a3, // 4 inputs
 	output logic y[8:0]	// 16-bit output
