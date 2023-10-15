@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk50m'
+Slack : -3.852
+TNS   : -104.515
+
+Type  : Slow 1200mV 85C Model Setup 'debouncer:clk_db|A'
+Slack : -1.654
+TNS   : -5.513
+
+Type  : Slow 1200mV 85C Model Hold 'debouncer:clk_db|A'
+Slack : 0.346
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk50m'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'debouncer:clk_db|A'
+Slack : -1.417
+TNS   : -3.958
+
+Type  : Slow 1200mV 85C Model Removal 'debouncer:clk_db|A'
+Slack : 1.223
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk50m'
+Slack : -3.000
+TNS   : -50.702
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debouncer:clk_db|A'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Setup 'clk50m'
+Slack : -3.520
+TNS   : -94.306
+
+Type  : Slow 1200mV 0C Model Setup 'debouncer:clk_db|A'
+Slack : -1.455
+TNS   : -4.734
+
+Type  : Slow 1200mV 0C Model Hold 'debouncer:clk_db|A'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk50m'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'debouncer:clk_db|A'
+Slack : -1.314
+TNS   : -3.663
+
+Type  : Slow 1200mV 0C Model Removal 'debouncer:clk_db|A'
+Slack : 1.228
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk50m'
+Slack : -3.000
+TNS   : -50.702
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debouncer:clk_db|A'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Fast 1200mV 0C Model Setup 'clk50m'
+Slack : -1.130
+TNS   : -25.161
+
+Type  : Fast 1200mV 0C Model Setup 'debouncer:clk_db|A'
+Slack : -0.088
+TNS   : -0.134
+
+Type  : Fast 1200mV 0C Model Hold 'debouncer:clk_db|A'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk50m'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'debouncer:clk_db|A'
+Slack : -0.351
+TNS   : -0.600
+
+Type  : Fast 1200mV 0C Model Removal 'debouncer:clk_db|A'
+Slack : 0.729
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk50m'
+Slack : -3.000
+TNS   : -38.207
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debouncer:clk_db|A'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

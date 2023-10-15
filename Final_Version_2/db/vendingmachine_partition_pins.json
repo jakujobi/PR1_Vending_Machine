@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tom",
+					"strict" : false
+				},
+				{
+					"name" : "s[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s[2]",
+					"strict" : false
+				},
+				{
+					"name" : "s[3]",
+					"strict" : false
+				},
+				{
+					"name" : "s[4]",
+					"strict" : false
+				},
+				{
+					"name" : "s[5]",
+					"strict" : false
+				},
+				{
+					"name" : "s[6]",
+					"strict" : false
+				},
+				{
+					"name" : "c[0]",
+					"strict" : false
+				},
+				{
+					"name" : "c[1]",
+					"strict" : false
+				},
+				{
+					"name" : "c[2]",
+					"strict" : false
+				},
+				{
+					"name" : "c[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outled[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outled[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outled[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outled[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HapCH",
+					"strict" : false
+				},
+				{
+					"name" : "FarthCH",
+					"strict" : false
+				},
+				{
+					"name" : "coin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "coin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "coin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "clk50m",
+					"strict" : false
+				},
+				{
+					"name" : "res",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

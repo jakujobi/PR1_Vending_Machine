@@ -1,0 +1,381 @@
+|vendingmachine
+coin[0] => encoder:comb_3.y[0]
+coin[1] => encoder:comb_3.y[1]
+coin[2] => encoder:comb_3.y[2]
+clk => clk.IN1
+clk50m => clk50m.IN2
+res => res.IN1
+tom << tomd416:comb_5.t
+s[0] << outputlogic:comb_6.curstate[0]
+s[1] << outputlogic:comb_6.curstate[1]
+s[2] << outputlogic:comb_6.curstate[2]
+s[3] << outputlogic:comb_6.curstate[3]
+s[4] << outputlogic:comb_6.curstate[4]
+s[5] << outputlogic:comb_6.curstate[5]
+s[6] << outputlogic:comb_6.curstate[6]
+c[0] << outputlogic:comb_6.curchange[0]
+c[1] << outputlogic:comb_6.curchange[1]
+c[2] << outputlogic:comb_6.curchange[2]
+c[3] << outputlogic:comb_6.curchange[3]
+c[4] << outputlogic:comb_6.curchange[4]
+c[5] << outputlogic:comb_6.curchange[5]
+c[6] << outputlogic:comb_6.curchange[6]
+outled[0] << d2[0].DB_MAX_OUTPUT_PORT_TYPE
+outled[1] << d2[1].DB_MAX_OUTPUT_PORT_TYPE
+outled[2] << d2[2].DB_MAX_OUTPUT_PORT_TYPE
+outled[3] << d2[3].DB_MAX_OUTPUT_PORT_TYPE
+HapCH << outputlogic:comb_6.halfp
+FarthCH << outputlogic:comb_6.far
+
+
+|vendingmachine|debouncer:clk_db
+A_noisy => Anext.IN1
+A_noisy => t_r.IN1
+A_noisy => t_r.IN1
+CLK50M => A~reg0.CLK
+CLK50M => COUNT[0].CLK
+CLK50M => COUNT[1].CLK
+CLK50M => COUNT[2].CLK
+CLK50M => COUNT[3].CLK
+CLK50M => COUNT[4].CLK
+CLK50M => COUNT[5].CLK
+CLK50M => COUNT[6].CLK
+CLK50M => COUNT[7].CLK
+CLK50M => COUNT[8].CLK
+CLK50M => COUNT[9].CLK
+CLK50M => COUNT[10].CLK
+CLK50M => COUNT[11].CLK
+CLK50M => COUNT[12].CLK
+CLK50M => COUNT[13].CLK
+CLK50M => COUNT[14].CLK
+CLK50M => COUNT[15].CLK
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|debouncer:res_db
+A_noisy => Anext.IN1
+A_noisy => t_r.IN1
+A_noisy => t_r.IN1
+CLK50M => A~reg0.CLK
+CLK50M => COUNT[0].CLK
+CLK50M => COUNT[1].CLK
+CLK50M => COUNT[2].CLK
+CLK50M => COUNT[3].CLK
+CLK50M => COUNT[4].CLK
+CLK50M => COUNT[5].CLK
+CLK50M => COUNT[6].CLK
+CLK50M => COUNT[7].CLK
+CLK50M => COUNT[8].CLK
+CLK50M => COUNT[9].CLK
+CLK50M => COUNT[10].CLK
+CLK50M => COUNT[11].CLK
+CLK50M => COUNT[12].CLK
+CLK50M => COUNT[13].CLK
+CLK50M => COUNT[14].CLK
+CLK50M => COUNT[15].CLK
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|encoder:comb_3
+y[0] => out.IN0
+y[1] => out.IN0
+y[2] => out.IN1
+y[2] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|statelogic:comb_4
+s[0] => d.IN1
+s[0] => d.IN1
+s[0] => d.IN0
+s[0] => d.IN1
+s[0] => d.IN0
+s[0] => d.IN1
+s[0] => d.IN0
+s[0] => d.IN0
+s[0] => d.IN0
+s[0] => d.IN0
+s[0] => d.IN1
+s[0] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN0
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[1] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[2] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+s[3] => d.IN1
+y[0] => d.IN0
+y[0] => d.IN1
+y[0] => d.IN1
+y[0] => d.IN0
+y[0] => d.IN1
+y[0] => d.IN0
+y[0] => d.IN0
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+y[1] => d.IN1
+d[0] <= d.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:zero
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:one
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:two
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|D_FF_neg:three
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|tomd416:comb_5
+a0 => y[5].IN1
+a0 => y[7].IN1
+a0 => y[6].IN1
+a0 => y[8].IN1
+a1 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a2 => y.IN0
+a2 => y.IN0
+a3 => y.IN1
+a3 => y.IN1
+t <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|outputlogic:comb_6
+A[0] => seven_seg:comb_3.A[0]
+A[0] => changesev:comb_4.A[0]
+A[1] => seven_seg:comb_3.A[1]
+A[1] => changesev:comb_4.A[1]
+A[2] => seven_seg:comb_3.A[2]
+A[2] => changesev:comb_4.A[2]
+A[3] => seven_seg:comb_3.A[3]
+A[3] => changesev:comb_4.A[3]
+curstate[0] <= seven_seg:comb_3.S[0]
+curstate[1] <= seven_seg:comb_3.S[1]
+curstate[2] <= seven_seg:comb_3.S[2]
+curstate[3] <= seven_seg:comb_3.S[3]
+curstate[4] <= seven_seg:comb_3.S[4]
+curstate[5] <= seven_seg:comb_3.S[5]
+curstate[6] <= seven_seg:comb_3.S[6]
+curchange[0] <= changesev:comb_4.S[0]
+curchange[1] <= changesev:comb_4.S[1]
+curchange[2] <= changesev:comb_4.S[2]
+curchange[3] <= changesev:comb_4.S[3]
+curchange[4] <= changesev:comb_4.S[4]
+curchange[5] <= changesev:comb_4.S[5]
+curchange[6] <= changesev:comb_4.S[6]
+far <= changesev:comb_4.f
+halfp <= changesev:comb_4.h
+
+
+|vendingmachine|outputlogic:comb_6|seven_seg:comb_3
+A[0] => d416:comb_3.a0
+A[1] => d416:comb_3.a1
+A[2] => d416:comb_3.a2
+A[3] => d416:comb_3.a3
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|outputlogic:comb_6|seven_seg:comb_3|d416:comb_3
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a2 => y.IN0
+a2 => y.IN0
+a2 => y.IN0
+a3 => y.IN1
+a3 => y.IN1
+a3 => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|outputlogic:comb_6|changesev:comb_4
+A[0] => d416:comb_3.a0
+A[1] => d416:comb_3.a1
+A[2] => d416:comb_3.a2
+A[3] => d416:comb_3.a3
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= d416:comb_3.y[7]
+S[5] <= <VCC>
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+h <= S.DB_MAX_OUTPUT_PORT_TYPE
+f <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vendingmachine|outputlogic:comb_6|changesev:comb_4|d416:comb_3
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a0 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a1 => y.IN1
+a2 => y.IN0
+a2 => y.IN0
+a2 => y.IN0
+a3 => y.IN1
+a3 => y.IN1
+a3 => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

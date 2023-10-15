@@ -1,0 +1,28 @@
+module dec416
+(
+
+	input  logic a0, a1, a2, a3,
+	output logic [8:0] y
+
+);
+
+assign y[0]  =~a3 & ~a2 & ~a1 & ~a0;
+assign y[1]  =~a3 & ~a2 & ~a1 &  a0;
+assign y[2]  =~a3 & ~a2 &  a1 & ~a0;
+assign y[3]  =~a3 & ~a2 &  a1 &  a0;
+assign y[4]  =~a3 &  a2 & ~a1 & ~a0;
+assign y[5]  = ~a3 &  a2 & ~a1 &  a0;
+assign y[6]  = ~a3 &  a2 &  a1 & ~a0;
+assign y[7]  = ~a3 &  a2 &  a1 &  a0;
+assign y[8]  =  a3 & ~a2 & ~a1 & ~a0;
+//assign y[9]  = E &  a3 & ~a2 & ~a1 &  a0;
+//assign y[10] = E &  a3 & ~a2 &  a1 & ~a0;
+//assign y[11] = E &  a3 & ~a2 &  a1 &  a0;
+//assign y[12] = E &  a3 &  a2 & ~a1 & ~a0;
+//assign y[13] = E &  a3 &  a2 & ~a1 &  a0;
+//assign y[14] = E &  a3 &  a2 &  a1 & ~a0;
+//assign y[15] = E &  a3 &  a2 &  a1 &  a0;
+
+
+
+endmodule

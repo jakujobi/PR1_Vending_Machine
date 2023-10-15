@@ -1,0 +1,12 @@
+module vending(
+input logic  coin[3:0],
+input logic clk,
+input logic res,
+output logic tom[3:0]
+)
+
+logic ei[1:0] 
+
+
+
+encoder (.y(coin) , .out(ei))
