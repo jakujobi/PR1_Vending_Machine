@@ -1,6 +1,6 @@
 module outputlogic(
- input logic A[3:0],
- output logic curstate[6:0] , curchange[6:0] , far , halfp
+    input logic A[3:0],
+    output logic curstate[6:0] , curchange[6:0] , far , halfp
 );
 
 
