@@ -1,10 +1,28 @@
+// Authors:	John Akujobi, LNU Sukhman Singh
+// Date: 	October, Fall, 2023
+// Name:   	changesev
+// Filename: changesev.sv
+
+// Description: This is the module for the change in Ha'penny and Farthing
+//	It takes in a 4 bit input from the state and outputs a 7 bit output to the HEX display.
+//	It also outputs two control signals for the LEDs
+
+// Inputs
+// - A[3:0]: 4-bit input from the state
+
+// Outputs
+// - S[6:0]: 7-bit output to the HEX display showing the change in Farthings
+// - h: 1-bit output for Ha'penny LED
+// - f: 1-bit output for Farthing LED
+
+
 module changesev (
 	input logic  A[3:0],	// 4 bit input from the state
 	output logic S[6:0] ,	// 7 nit output to the Hex display showing the change in Farthings
 	output logic h , f //controls the led for Ha'penny and Farthing change
 );
 
-logic Y[8:0];
+logic Y[8:0];	// 9 bit output decoded from the 4 bit input
 
 d416 (
 	.a0(A[0]),

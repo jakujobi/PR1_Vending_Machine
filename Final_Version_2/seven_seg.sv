@@ -1,7 +1,10 @@
 // Authors:	John Akujobi, LNU Sukhman Singh
 // Date: 	October, Fall, 2023
 // Name:   	seven segment
-// Filename: seven_seg.sv 
+// Filename: seven_seg.sv
+// Description: This is the module for the seven segment display
+// This helps us decide when a number on the seven segment will be given
+// Hence, it controls the LEDs for seven segment display
 
 module seven_seg (
 	input logic  A[3:0],	// 4 bit input
@@ -10,6 +13,7 @@ module seven_seg (
 
 logic Y[8:0];
 
+// The decoder decodes the 4 bit input into a 9 bit output Y[8:0	]
 d416 (
 	.a0(A[0]),
 	.a1(A[1]),
