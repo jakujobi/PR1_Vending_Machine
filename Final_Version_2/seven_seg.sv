@@ -6,6 +6,9 @@
 // This helps us decide when a number on the seven segment will be given
 // Hence, it controls the LEDs for seven segment display
 
+// Input - A[3:0] - 4 bit input
+// Output - S[6:0] - 7 bit output
+
 module seven_seg (
 	input logic  A[3:0],	// 4 bit input
 	output logic S[6:0]	// 7 bit output

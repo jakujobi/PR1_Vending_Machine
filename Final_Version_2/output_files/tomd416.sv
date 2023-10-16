@@ -3,6 +3,12 @@
 // Description: This is the module for the Tomato LED
 // This helps us decide when a Tomato will be given
 // Hence, it controls the LED for Tomato
+
+// Input
+// - A[3:0]: 4 bit input from the state
+// Output
+// - t: 1-bit output for Tomato LED
+
 module tomd416 (
 	input  logic a0, a1, a2, a3,	// 4 inputs for the states
 	output t 	//Tomato Output LED
